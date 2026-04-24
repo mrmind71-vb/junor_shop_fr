@@ -1,0 +1,20 @@
+Private Sub xDate_GotFocus()
+mygotFocus xDate
+End Sub
+Private Sub xDate_LostFocus()
+myLostFocus xDate
+myvalidDate xDate
+End Sub
+Private Sub xDesca_GotFocus()
+mygotFocus xDesca
+End Sub
+Private Sub xDesca_LostFocus()
+myLostFocus xDesca
+End Sub
+Private Sub xBank_GotFocus()
+mygotFocus xBank
+End Sub
+Private Sub xBank_LostFocus()
+myLostFocus xBank
+IF NOT xBank.MatchedWithList THEN xBank.BoundText = ""
+End Sub
